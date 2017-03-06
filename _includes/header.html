@@ -1,8 +1,8 @@
-<header class="site-header" role="banner">
+<header class="site-header" role="banner" id ='site-header'>
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+    <a id='site-title' class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
 
     <nav class="site-nav">
       <span class="menu-icon">
@@ -16,9 +16,11 @@
       <div class="trigger">
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          <a class="page-link" href="{{ my_page.url | relative_url }}" style='color:white;'>{{ my_page.title | escape }}</a>
           {% endif %}
         {% endfor %}
+        <a class='page-link' href='#contact' style='color:white;'>Portfolio Site</a>
+        <a class='page-link' href='#contact' style='color:white;'>Contact</a>
       </div>
     </nav>
 

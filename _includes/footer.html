@@ -6,7 +6,7 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
+        <ul class="contact-list" id='contact'>
           <li>
             {% if site.author %}
               {{ site.author | escape }}
@@ -40,7 +40,7 @@
         <p>{{ site.description | escape }}</p>
       </div>
     </div>
-
+    <p class="rss-subscribe" ><a style='color:white;' href="{{ "/feed.xml" | relative_url }}">subscribe via RSS</a></p>
   </div>
 
 </footer>
